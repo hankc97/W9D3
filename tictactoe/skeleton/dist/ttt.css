@@ -23,3 +23,53 @@ li:hover {
     background: yellow;
     cursor: pointer;
 }
+
+.x {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.o {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.x:hover {
+    background: none;
+    cursor: auto;
+}
+
+.o:hover {
+    background: none;
+    cursor: auto;
+}
+
+.x:before {
+    font-size: 100px;
+    content: "x";
+    color: red;
+}
+
+.o:before {
+    font-size: 100px;
+    content: "o";
+    color: red;
+}
+
+.winner {
+    background: green;
+}
+
+.winner:before {
+    color: white;
+    font-size: 100px;
+    content: attr(class) - "winner " ;
+}
+
+/* class = ".x winner" */
